@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 20px;
+    }
+
+    main {
+      padding: 40px 20px;
+    }
+
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>vanakkam</h1>
+  </header><html>
+<body>
+<form>
+<!-- Text Field -->
+    <label>First Name</label><br>
+    <input type="text" placeholder="Enter First Name"><br>
+
+    <label>Last Name</label><br>
+    <input type="text" placeholder="Enter Last Name"><br>
+
+    <!-- Text Area -->
+    <label>Address</label><br>
+    <textarea rows="4" placeholder="Enter Address"></textarea><br>
+
+    <!-- Radio Button -->
+    <label>Gender</label><br>
+    <div class="radio-group">
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+</div>
+
+    <!-- Combo Box -->
+    <label>Department</label><br>
+    <select>
+        <option>Select Department</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+    </select><br>
+
+    <!-- List Box -->
+    <label>Programming Languages</label><br>
+    <select multiple size="4">
+        <option>Java</option>
+        <option>Python</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>JavaScript</option>
+    </select><br>
+</form>
+</body>
+</html>
+ <main>
+    <p>please enter.</p>
+    <button onclick="showMessage()">enter</button>
+    <p id="message"></p>
+  </main>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").textContent = "User detail updated";
+    }
+  </script>
+</body>
+</html>

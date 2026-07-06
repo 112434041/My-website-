@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f4f4f4;
+        text-align:center;
+    }
+
+    form{
+        width:350px;
+        margin:20px auto;
+        padding:20px;
+        background:white;
+        border-radius:10px;
+        box-shadow:0 0 10px gray;
+    }
+
+    input, textarea, select{
+        width:90%;
+        padding:8px;
+        margin:8px 0;
+    }
+
+    button{
+        background:#0078d7;
+        color:white;
+        border:none;
+        padding:10px 20px;
+        cursor:pointer;
+        border-radius:5px;
+    }
+
+    button:hover{
+        background:#005fa3;
+    }
+
+    .radio-group{
+        margin:10px;
+    }
+
+    .radio-group input{
+        width:auto;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Student Registration Form</h2>
+
+<form>
+
+    <!-- Text Field -->
+    <label>First Name</label><br>
+    <input type="text" placeholder="Enter First Name"><br>
+
+    <label>Last Name</label><br>
+    <input type="text" placeholder="Enter Last Name"><br>
+
+    <!-- Text Area -->
+    <label>Address</label><br>
+    <textarea rows="4" placeholder="Enter Address"></textarea><br>
+
+    <!-- Radio Button -->
+    <label>Gender</label><br>
+    <div class="radio-group">
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <!-- Combo Box -->
+    <label>Department</label><br>
+    <select>
+        <option>Select Department</option>
+        <option>Computer Science</option>
+        <option>Information Technology</option>
+        <option>Electronics</option>
+        <option>Mechanical</option>
+    </select><br>
+
+    <!-- List Box -->
+    <label>Programming Languages</label><br>
+    <select multiple size="4">
+        <option>Java</option>
+        <option>Python</option>
+        <option>C</option>
+        <option>C++</option>
+        <option>JavaScript</option>
+    </select><br><br>
+
+    <!-- Button -->
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

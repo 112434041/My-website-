@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form Alignment</title>
+    <style>
+        /* Centers the form on the screen */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+            background-color: #f9f9f9;
+        }
+        /* Grid container for flawless label and input alignment */
+        .form-grid {
+            display: grid;
+            grid-template-columns: 150px 250px;
+            gap: 15px;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        /* Custom styling for sleek layout width adjustments */
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 6px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        /* Inline helper to handle checkbox text alignment */
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+    </style>
+</head>
+<h1>subcribers update</h1>
+<body>
+    <form class="form-grid">
+        
+        <!-- 1. Text Field -->
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter text here">
+
+        <!-- 2. Combo Box (Standard dropdown) -->
+        <label for="country">Combo Box:</label>
+        <select id="country">
+            <option>Select an option...</option>
+            <option>United States</option>
+            <option>India</option>
+            <option>United Kingdom</option>
+        </select>
+
+        <!-- 3. List Box (Dropdown with 'size' attribute to show multiple lines) -->
+        <label for="skills">List Box:</label>
+        <select id="skills" size="3">
+            <option>HTML5</option>
+            <option>CSS3</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+
+        <!-- 4. Check Box -->
+        <label>Check Box:</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe" style="font-weight: normal;">Subscribe to updates</label>
+        </div>
+
+    </form>
+
+</body>
+</html>

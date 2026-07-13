@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Form to PHP</title>
+</head>
+<body>
+
+    <!-- HTML Form with Two Fields -->
+    <form action="" method="POST">
+        <label for="username">Name:</label>
+        <input type="text" id="username" name="username" required>
+        <br><br>
+
+        <label for="useremail">Email:</label>
+        <input type="email" id="useremail" name="useremail" required>
+        <br><br>
+
+        <button type="submit" name="submit">Submit Data</button>
+    </form>
+
+    <br><hr><br>
+
+    <!-- PHP Logic to Display the Values -->
+    <?php
+    // Check if the form has been submitted
+    if (isset($_POST['submit'])) {
+        
+        // Collect and sanitize the form field values using the input 'name' attributes
+        $name = htmlspecialchars($_POST['username']);
+        $email = htmlspecialchars($_POST['useremail']);
+
+        // Display the values back to the user
+        echo <h3>Submitted Information:</h3>;
+        echo <strong>Name:</strong>  . $name . <br>;
+        echo <strong>Email:</strong>  . $email . <br>;
+    }
+    ?>
+
+</body>
+</html>
